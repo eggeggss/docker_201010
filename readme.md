@@ -80,5 +80,7 @@ sudo cp docker-compose /usr/local/bin/
 
 sudo chmod +x /usr/local/bin/docker-compose
 
+docker image load < nginx.tar
+
 docker-compose -v
 ```
