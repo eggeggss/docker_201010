@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  web01:
+    image: nginx:latest
+    restart: always
+    ports:
+      - "8081:80"
+    networks:
+      - webnet
+networks:
+    webnet:
+      ipam:
+        config:
+           - subnet: 200.177.0.0/16
